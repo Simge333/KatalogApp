@@ -124,12 +124,12 @@ Her ürün şu alanları içerir: `id`, `name`, `tagline`, `description`, `price
 
 ## 📸 Ekran Görüntüsü
 <p>
-  <img src=<img width="391" height="845" alt="image" src="https://github.com/user-attachments/assets/93720f8e-9fe1-4787-b43a-af71f19abf1a" />
-width="200"/>
-  <img src=<img width="306" height="637" alt="image" src="https://github.com/user-attachments/assets/d0bb23ab-55b5-4586-a161-27c9234c30ee" />
- width="200"/>
-  <img src=<img width="405" height="848" alt="image" src="https://github.com/user-attachments/assets/5fcd0b08-2fcc-463b-8bb5-a5fdb21f7218" />
- width="200"/>
-  <img src=<img width="403" height="842" alt="image" src="https://github.com/user-attachments/assets/3240c808-3ec5-4cc6-8f29-5171d890bc37" />
- width="200"/>
+  <img src="<img width="391" height="845" alt="image" src="https://github.com/user-attachments/assets/40b30b57-6246-4885-8877-19f1c6ea99bf" />
+" width="200"/>
+  <img src="<img width="306" height="637" alt="image" src="https://github.com/user-attachments/assets/dad88b13-a357-4c93-a351-374f48541cf1" />
+" width="200"/>
+  <img src="<img width="405" height="848" alt="image" src="https://github.com/user-attachments/assets/3d7af852-99d8-4b5a-b853-101f7b620073" />
+" width="200"/>
+  <img src="<img width="403" height="842" alt="image" src="https://github.com/user-attachments/assets/21bc2f37-2cf8-47ff-8aa5-0427ae2f385e" />
+" width="200"/>
 </p>
