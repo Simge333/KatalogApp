@@ -1,17 +1,135 @@
-# katalogapp
+# 📱 KatalogApp
 
-A new Flutter project.
+Bir Flutter ürün kataloğu uygulaması. Uzak bir API'den ürünleri listeler, detaylarını gösterir ve sepete ekleme imkânı sunar.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Özellikler
 
-A few resources to get you started if this is your first Flutter project:
+- Ürünleri grid görünümünde listeleme
+- Ürün detay sayfası (açıklama, fiyat, görsel)
+- Sepete ürün ekleme ve çıkarma
+- Boş sepet durumu için özel ekran
+- Banner görseli ile zenginleştirilmiş ana ekran
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🗂️ Proje Yapısı
+
+```
+lib/
+├── main.dart
+├── models/
+│   └── product_model.dart       # Veri modelleri
+├── services/
+│   └── api_service.dart         # HTTP istekleri
+├── components/
+│   └── product_card.dart        # Ürün kartı bileşeni
+└── views/
+    ├── home_screen.dart          # Ana ekran
+    ├── product_detail_screen.dart # Ürün detay ekranı
+    └── cart_screen.dart          # Sepet ekranı
+```
+
+---
+
+## 🚀 Kurulum ve Çalıştırma
+
+### Gereksinimler
+
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) — **3.29.1** veya üzeri
+- Dart SDK (Flutter ile birlikte gelir)
+- Android Studio / Xcode (emülatör için) veya fiziksel cihaz
+- İnternet bağlantısı (API ve görseller için)
+
+### Kullanılan Flutter Sürümü
+
+```
+Flutter 3.29.1
+```
+
+### Adımlar
+
+**1. Repoyu klonlayın**
+
+```bash
+git clone https://github.com/kullanici-adi/katalogapp.git
+cd katalogapp
+```
+
+**2. Bağımlılıkları yükleyin**
+
+```bash
+flutter pub get
+```
+
+**3. Uygulamayı çalıştırın**
+
+```bash
+flutter run
+```
+
+Birden fazla cihaz/emülatör bağlıysa hedef seçmek için:
+
+```bash
+flutter run -d <device-id>
+```
+
+Bağlı cihazları listelemek için:
+
+```bash
+flutter devices
+```
+
+---
+
+## 📦 Kullanılan Bağımlılıklar
+
+| Paket | Açıklama |
+|-------|----------|
+| `http` | REST API istekleri için |
+
+`pubspec.yaml` içinde:
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+```
+
+---
+
+## 🌐 API
+
+Uygulama, ürün verilerini aşağıdaki uç noktadan çeker:
+
+```
+GET https://wantapi.com/products.php
+```
+
+Her ürün şu alanları içerir: `id`, `name`, `tagline`, `description`, `price`, `currency`, `image`, `specs`
+
+---
+
+## 📸 Ekranlar
+
+| Ekran | Açıklama |
+|-------|----------|
+| **Home** | Tüm ürünleri 2 sütunlu grid'de listeler |
+| **Ürün Detayı** | Ürünün görseli, açıklaması, fiyatı ve sepete ekle butonu |
+| **Sepet** | Sepetteki ürünleri listeler, ürün kaldırma ve checkout butonu |
+
+---
+
+## 📸 Ekran Görüntüsü
+<p>
+  <img src=<img width="391" height="845" alt="image" src="https://github.com/user-attachments/assets/93720f8e-9fe1-4787-b43a-af71f19abf1a" />
+width="200"/>
+  <img src=<img width="306" height="637" alt="image" src="https://github.com/user-attachments/assets/d0bb23ab-55b5-4586-a161-27c9234c30ee" />
+ width="200"/>
+  <img src=<img width="405" height="848" alt="image" src="https://github.com/user-attachments/assets/5fcd0b08-2fcc-463b-8bb5-a5fdb21f7218" />
+ width="200"/>
+  <img src=<img width="403" height="842" alt="image" src="https://github.com/user-attachments/assets/3240c808-3ec5-4cc6-8f29-5171d890bc37" />
+ width="200"/>
+</p>
