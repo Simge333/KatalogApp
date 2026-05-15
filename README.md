@@ -45,7 +45,7 @@ lib/
 ### Kullanılan Flutter Sürümü
 
 ```
-Flutter 3.29.1
+Flutter 3.41.9
 ```
 
 ### Adımlar
